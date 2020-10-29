@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:14.10.1
+        auth:
+          username: furaga
+          password: Jason@19830923
+    steps:
+      - checkout
+      - run: echo "hello world"
